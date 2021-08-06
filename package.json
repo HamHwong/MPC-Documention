@@ -1,0 +1,28 @@
+{
+  "name": "mpc-documention",
+  "version": "1.0.0",
+  "description": "the documention of MPC, and based on vitepress.",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HamHwong/MPC-Documention.git"
+  },
+  "author": "Hamhwong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HamHwong/MPC-Documention/issues"
+  },
+  "homepage": "https://github.com/HamHwong/MPC-Documention#readme",
+  "devDependencies": {
+    "sass": "^1.37.5",
+    "vitepress": "^0.15.6"
+  },
+  "dependencies": {
+    "@mpanda/mpc": "^0.1.58"
+  }
+}
