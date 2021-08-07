@@ -1,5 +1,8 @@
 # Carousel 轮播图
 ## Overview
+用翻牌展示图片信息，在IE上加载不出来的，别试了
+
+尽量单组件控制在50张以内，之后再优化。
 ## Example
 <script setup>
   const data = [{
@@ -26,8 +29,8 @@
     console.log($event, item, index) 
   } 
 </script>
-<div style="width:100%">
-<MPCarousel @click="handleClick" :value="data" /> 
+<div style="width:100%;background-color:#ccc;box-sizing:content-box;">
+  <MPCarousel indicators @click="handleClick" :value="data" /> 
 </div>
 
 ```vue
@@ -43,15 +46,25 @@ export default {
     }
     const data = reactive([
       {
-        order: 1,
+        order: 1, 
         pic: '/images/img.jpg',
-        width: 400,
+        width: 300,
       },
       {
-        order: 2,
-        pic: '/images/img.jpg',
-        width: 400,
+        order: 2, 
+        pic: '/images/img2.jpg', 
+        width: 300,
       },
+      {
+        order: 3, 
+        pic: '/images/img3.jpg', 
+        width: 300,
+      },
+      {
+        order: 4, 
+        pic: '/images/img.jpg', 
+        width: 300,
+      }
     ])
     return {
       data,

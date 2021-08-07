@@ -12,6 +12,9 @@ export default {
   enhanceApp({ app }) {
     app.component('MPCarousel', MPC.components.MPCarousel)
     app.component('MPPdfReader', MPC.components.MPPdfReader)
+    app.component('MPModal', MPC.components.MPModal)
+    app.directive('tooltips', MPC.components.MPTooltips)
+    app.directive('suspend', MPC.components.MPSuspend)
     app.component('font-awesome-icon', FontAwesomeIcon)
     app.component('font-awesome-layers', FontAwesomeLayers)
     app.component('font-awesome-layers-text', FontAwesomeLayersText)
