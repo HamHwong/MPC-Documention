@@ -1,5 +1,5 @@
 module.exports = {
-  title: "MPC", // 顶部左侧标题
+  title: "MpandaStudio Components Library", // 顶部左侧标题
   base: "/", // 项目的根路径
   lang: 'zh-CN',
   head: [

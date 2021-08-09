@@ -200,7 +200,7 @@
   resolved "https://registry.yarnpkg.com/@francoischalifour/autocomplete-preset-algolia/-/autocomplete-preset-algolia-1.0.0-alpha.28.tgz#a5ad7996f42e43e4acbb4e0010d663746d0e9997"
   integrity sha512-bprfNmYt1opFUFEtD2XfY/kEsm13bzHQgU80uMjhuK0DJ914IjolT1GytpkdM6tJ4MBvyiJPP+bTtWO+BZ7c7w==
 
-"@mpanda/mpc@^0.1.62.1":
+"@mpanda/mpc@^0.1.62.61":
   version "0.1.62"
   resolved "https://registry.yarnpkg.com/@mpanda/mpc/-/mpc-0.1.62.tgz#ba112f981d170ce03d94f893880648b0e121178f"
   integrity sha512-2VYgtbagz7ssFndiyb7itAcVwGaU1l3d9ztU0YyKyCajfkZsM3hqxSp6+mtUKIZEzpaHYSR4P0r67ELuoEOMUQ==
