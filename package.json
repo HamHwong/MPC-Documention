@@ -18,12 +18,11 @@
     "url": "https://github.com/HamHwong/MPC-Documention/issues"
   },
   "homepage": "https://github.com/HamHwong/MPC-Documention#readme",
-  "devDependencies": {
-    "patch-vue-directive-ssr": "^0.0.1",
+  "devDependencies": { 
     "sass": "^1.37.5",
     "vitepress": "^0.15.6"
   },
   "dependencies": {
-    "@mpanda/mpc": "^0.1.6-2.72"
+    "@mpanda/mpc": "^0.1.6-2.83"
   }
 }

@@ -200,10 +200,10 @@
   resolved "https://registry.yarnpkg.com/@francoischalifour/autocomplete-preset-algolia/-/autocomplete-preset-algolia-1.0.0-alpha.28.tgz#a5ad7996f42e43e4acbb4e0010d663746d0e9997"
   integrity sha512-bprfNmYt1opFUFEtD2XfY/kEsm13bzHQgU80uMjhuK0DJ914IjolT1GytpkdM6tJ4MBvyiJPP+bTtWO+BZ7c7w==
 
-"@mpanda/mpc@^0.1.62.61":
-  version "0.1.62"
-  resolved "https://registry.yarnpkg.com/@mpanda/mpc/-/mpc-0.1.62.tgz#ba112f981d170ce03d94f893880648b0e121178f"
-  integrity sha512-2VYgtbagz7ssFndiyb7itAcVwGaU1l3d9ztU0YyKyCajfkZsM3hqxSp6+mtUKIZEzpaHYSR4P0r67ELuoEOMUQ==
+"@mpanda/mpc@^0.1.6-2.83":
+  version "0.1.6-2.83"
+  resolved "https://registry.yarnpkg.com/@mpanda/mpc/-/mpc-0.1.6-2.83.tgz#69ca7851b00d795bb3c94d318e4fe3bc5adf643a"
+  integrity sha512-67DBYBK5ciWVP2ukc3CeU0RE4/jPS/ZAoPPrOpY9K9+vs2xwnLWG20PO0gGgIRzzSZ8AChUAL18xpBaz+ve7gw==
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^1.2.35"
     "@fortawesome/free-brands-svg-icons" "^5.15.3"

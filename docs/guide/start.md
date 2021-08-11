@@ -17,6 +17,7 @@ yarn add @mpanda/mpc -S
 ```js 
 import { createApp } from 'vue'
 import MPC from '@mpanda/mpc' 
+import '@mpanda/mpc/lib/mpc.css'
 import App from './App.vue'
 const Vue = createApp(App)
 Vue.use(MPC)

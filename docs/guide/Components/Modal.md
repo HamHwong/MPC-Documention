@@ -4,16 +4,27 @@
 
 ## Example
 
-
-<script setup> 
-import { ref } from '@vue/reactivity';  
-const modalVisibility = ref(false)
-function handleClose (){
-    modalVisibility.value=false;
-} 
+<script> 
+import { onMounted, ref, nextTick, reactive, watch } from 'vue'
+export default{
+    setup(){
+        const modalVisibility = ref(false)
+        function handleClose (){
+            modalVisibility.value=false;
+        } 
+        function handleShow(){
+            modalVisibility.value=true; 
+        }
+        return {
+            modalVisibility,
+            handleClose,
+            handleShow
+        }
+    }
+}
 </script>
-<div @click="modalVisibility=true">{{modalVisibility}}</div>
-<MPModal :visible='true' @close="handleClose" draggable resizeable >aa</MPModal> 
+<div @click="handleShow">{{modalVisibility}} {{typeof modalVisibility}}</div>
+<MPModal :visible='modalVisibility'  @close="handleClose" draggable resizeable>aa</MPModal>
 
 ## API
 

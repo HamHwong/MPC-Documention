@@ -2,10 +2,14 @@
 ## Overview
 用翻牌展示图片信息，在IE上加载不出来的，别试了
 
+组件最小宽度会设置为2倍图片最大宽度, 请留好足够空间
+
 尽量单组件控制在50张以内，之后再优化。
 ## Example
 <script setup>
-  const data = [{
+import { onMounted, ref, nextTick, reactive, watch } from 'vue'
+  const isShow = ref(false)
+  const data = reactive([{
       order: 1, 
       pic: '/images/img.jpg',
       width: 300,
@@ -24,13 +28,27 @@
       order: 4, 
       pic: '/images/img.jpg', 
       width: 300,
-    }]
+    }])
+    onMounted(()=>{
+      isShow.value = true
+    })
   function handleClick ($event, item, index) { 
     console.log($event, item, index) 
+    // isShow.value = false
+    // nextTick(()=>{
+    //   data.push({
+    //     order: data.length+1, 
+    //     pic: '/images/img.jpg', 
+    //     width: 300,
+    //   })
+    //   isShow.value = true
+    // })
   } 
 </script>
-<div style="width:100%;background-color:#ccc;box-sizing:content-box;">
-  <MPCarousel indicators @click="handleClick" :value="data" /> 
+<div style="width:100%;
+            background-color:#ccc;
+            box-sizing:content-box;">
+  <MPCarousel v-if="isShow" indicators @click="handleClick" :value="data" /> 
 </div>
 
 ```vue
@@ -38,7 +56,7 @@
   <MPCarousel @click="handleClick" :value="data" />
 </template>
 <script>
-import { reactive, ref } from '@vue/reactivity'
+import { reactive, ref } from 'vue'
 export default {
   setup() {
     function handleClick($event, item, index) {
