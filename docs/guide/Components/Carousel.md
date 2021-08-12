@@ -97,6 +97,7 @@ export default {
 |Props Name|Explanation|Type|Default| 
 |:---------|:----------|:---|:------|
 |value|The source data of carousel|`Array`|`[]`|
+|height|The height of carousel|`String`|`300px`|
 |indicators|If show the indicators at the bottom of slides|`Boolean`|`false`|
 ### Data Props
 |Data Props Name|Explanation|Type|Default|Required|
