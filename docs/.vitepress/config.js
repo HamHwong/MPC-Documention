@@ -34,7 +34,7 @@ module.exports = {
       // 侧边栏
       '/': [
         {
-          text: 'Introduction 介绍',
+          text: 'Introduction',
           children: [
             { text: "What's MPC 什么是MPC？", link: '/' },
             { text: 'Start 从起步到芜湖', link: '/guide/start' },

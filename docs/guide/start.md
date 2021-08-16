@@ -1,6 +1,6 @@
 # Start 起步
 
-## Installation 安装
+## Installation安装
 ```shell
 npm install @mpanda/mpc -S
 ```
@@ -12,7 +12,7 @@ cnpm install @mpanda/mpc -S
 ```shell
 yarn add @mpanda/mpc -S
 ```
-## Usage 使用
+## Usage使用
 
 ```js 
 import { createApp } from 'vue'

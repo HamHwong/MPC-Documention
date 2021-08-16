@@ -18,11 +18,11 @@
     "url": "https://github.com/HamHwong/MPC-Documention/issues"
   },
   "homepage": "https://github.com/HamHwong/MPC-Documention#readme",
-  "devDependencies": { 
+  "devDependencies": {
     "sass": "^1.37.5",
-    "vitepress": "^0.15.6"
+    "vitepress": "^0.16.1"
   },
   "dependencies": {
-    "@mpanda/mpc": "^0.1.6-2.85"
+    "@mpanda/mpc": "^0.1.6-2.87"
   }
 }
