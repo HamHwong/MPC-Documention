@@ -57,6 +57,7 @@ module.exports = {
           children: [
             { text: 'Suspend 悬浮', link: '/guide/Directives/Suspend' },
             { text: 'Tooltips 提示框', link: '/guide/Directives/Tooltips' },
+            { text: 'Blur 磨砂玻璃效果', link: '/guide/Directives/Blur' },
           ],
         },
         {
