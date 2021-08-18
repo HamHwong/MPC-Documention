@@ -44,6 +44,7 @@ module.exports = {
         {
           text: 'Components 组件',
           children: [
+            { text: 'Card 卡片', link: '/guide/Components/Card' },
             { text: 'Carousel 轮播图', link: '/guide/Components/Carousel' },
             { text: 'Modal 弹窗', link: '/guide/Components/Modal' },
             {
@@ -57,7 +58,7 @@ module.exports = {
           children: [
             { text: 'Suspend 悬浮', link: '/guide/Directives/Suspend' },
             { text: 'Tooltips 提示框', link: '/guide/Directives/Tooltips' },
-            { text: 'Blur 磨砂玻璃效果', link: '/guide/Directives/Blur' },
+            { text: 'Blur 模糊', link: '/guide/Directives/Blur' },
           ],
         },
         {
@@ -87,6 +88,7 @@ module.exports = {
         directiveTransforms: {
           tooltips: ssrTransformCustomDir,
           suspend: ssrTransformCustomDir,
+          blur: ssrTransformCustomDir,
         },
       },
     },

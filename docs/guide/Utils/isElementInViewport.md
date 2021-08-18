@@ -2,7 +2,7 @@
 
 ## Overview
 
-DOM 设置为悬浮样式
+检测DOM是否出现
 
 ## Example
 
@@ -82,3 +82,10 @@ export default{
 }
 </script>
 ```
+
+## API
+### Params
+|Params Name|Explanation|Type|Required|
+|:---------|:----------|:---|:--------|
+|elDOM|The target DOM|`HTMLDocument`|`true`|
+|containerDOM|The container DOM, if left it black, the default DOM will be `#app` DOM or even `document` DOM|`HTMLDocument`|`false`| 
