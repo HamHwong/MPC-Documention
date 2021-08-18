@@ -36,7 +36,7 @@ module.exports = {
         {
           text: 'Introduction 介绍',
           children: [
-            { text: "What's MPC 什么是MPC？", link: '/index' },
+            { text: "What's MPC 什么是MPC？", link: '/' },
             { text: 'Start 从起步到芜湖', link: '/guide/start' },
             // { text: "Configuration 文件配置", link: "/guide/configuration" },
           ],
@@ -74,15 +74,14 @@ module.exports = {
     },
     nav: [
       // 顶部右侧导航栏
-      { text: '介绍', link: '/index', activeMatch: '^/$|^/guide/' },
+      { text: '介绍', link: '/', activeMatch: '^/$|^/guide/' },
       {
         text: '更多',
         link: '/contact/',
       },
     ],
   },
-  vue: {
-    ssr: false,
+  vue: { 
     template: {
       compilerOptions: {
         directiveTransforms: {
