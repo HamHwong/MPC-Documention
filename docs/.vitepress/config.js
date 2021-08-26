@@ -82,6 +82,7 @@ module.exports = {
     ],
   },
   vue: { 
+    ssr: false,
     template: {
       compilerOptions: {
         directiveTransforms: {

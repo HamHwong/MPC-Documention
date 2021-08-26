@@ -4,7 +4,7 @@
 
 附带多个卡片模版, 
 
-也可自定义使用
+也可自定义内容
 ## Example 
 ### Basic
 <div style="width:100%;
@@ -46,11 +46,26 @@
 
 #### 1. User Info Card
 
-<div style="display:flex;
-        flex-wrap: wrap;
-        width :50%;
-        margin-top:20px;">
-  <MPCard type="userinfo" :avatarPosition="`left`" style="width:100%;">
+<div style="display: flex; flex-wrap: wrap; width: 50%; margin: 20px auto;">
+  <MPCard type="userinfo" :avatarPosition="`left`" style="width: 100%">
+    <template #title>title</template>
+    <template #content>content</template>
+    <template #others>others</template>
+  </MPCard>
+</div>
+
+
+```vue 
+<div style="display: flex; flex-wrap: wrap; width: 50%; margin: 20px auto;">
+  <MPCard type="userinfo" :avatarPosition="`left`" style="width: 100%">
+    <template #title>title</template>
+    <template #content>content</template>
+    <template #others>others</template>
+  </MPCard>
+</div>
+```
+<div style="display: flex; flex-wrap: wrap; width: 50%; margin: 20px auto;">
+  <MPCard avatar="/images/avatar/default-avatar.png" type="userinfo" :avatarPosition="`right`" style="width: 100%">
     <template #title>title</template>
     <template #content>content</template>
     <template #others>others</template>
@@ -58,11 +73,8 @@
 </div>
 
 ```vue 
-<div style="display:flex;
-        flex-wrap: wrap;
-        width :50%;
-        margin-top:20px;">
-  <MPCard type="userinfo" :avatarPosition="`left`"  style="width:100%;">
+<div style="display: flex; flex-wrap: wrap; width: 50%; margin: 20px auto;">
+  <MPCard type="userinfo" :avatarPosition="`right`" style="width: 100%">
     <template #title>title</template>
     <template #content>content</template>
     <template #others>others</template>
@@ -70,238 +82,226 @@
 </div>
 ```
 
+
 #### 2. Bank Card
-<div style="flex-wrap: nowrap;
-      overflow-x: auto;
-      padding: 20px;">
-  <div style="width:1100px;
-      display: flex;">
-    <MPCard
-      :radius="`20px`"
-      type="bankCard"
-      style="width:350px;height:200px" 
-      :bgBlur="false"
-    >
-      <template #header>
-        <div
-          style="display:flex;justify-content: space-between;flex:1; align-items: center;"
-        >
-          <span style="font-size:12px;">WORD ELITE</span>
-          <span>
-            <img
-              src="/images/mastercard/wave.png"
-              :width="15" 
-            />
-          </span>
-        </div>
-      </template>
-      <template #avatar>
-        <img
-          src="/images/mastercard/mastercard.png"
-          :width="35"
-          :height="35"
-          style="margin:0px 5px 0px 0px;"
-          alt=""
-        />
-      </template>
-      <template #content>5412 7512 3412 3456</template>
-      <template #date
-        ><small style="font-size:0.5rem">VALID THAU</small> 12/23</template
-      >
-      <template #others
-        ><small style="font-size:12px">LEE M. CARDHOLDER</small></template
-      >
-    </MPCard> 
-    <MPCard
-      :radius="`20px`"
-      type="bankCard"
-      style="width:350px;height:200px"
-      backgroundImage='/images/img.jpg'
-    >
-      <template #header>
-        <div
-          style="display:flex;justify-content: space-between;flex:1; align-items: center;"
-        >
-          <span style="font-size:12px">WORD ELITE</span>
-          <span>
-            <img
-              src="/images/mastercard/wave.png"
-              :width="15" 
-            />
-          </span>
-        </div>
-      </template>
-      <template #avatar> 
-        <img
-          src="/images/mastercard/mastercard.png"
-          :width="35"
-          :height="35"
-          style="margin:0px 5px 0px 0px;"
-          alt=""
-        />
-      </template>
-      <template #content>5412 7512 3412 3456</template>
-      <template #date
-        ><small style="font-size:0.5rem">VALID THAU</small> 12/23</template
-      >
-      <template #others
-        ><small style="font-size:12px">LEE M. CARDHOLDER</small></template
-      >
-    </MPCard>
-    <MPCard
-      :radius="`20px`"
-      type="bankCard"
-      style="width:350px;height:200px" 
-      :bgBlur="false"
-    >
-      <template #header>
-        <div
-          style="display:flex;justify-content: space-between;flex:1; align-items: center;"
-        >
-          <span style="font-size:12px">WORD ELITE</span>
-          <span>
-            <img
-              src="/images/mastercard/wave.png"
-              :width="15" 
-            />
-          </span>
-        </div>
-      </template>
-      <template #avatar> 
-        <img
-          src="/images/mastercard/mastercard.png"
-          :width="35"
-          :height="35"
-          style="margin:0px 5px 0px 0px;"
-          alt=""
-        />
-      </template>
-      <template #content>5412 7512 3412 3456</template>
-      <template #date
-        ><small style="font-size:0.5rem">VALID THAU</small> 12/23</template
-      >
-      <template #others
-        ><small style="font-size:12px">LEE M. CARDHOLDER</small></template
-      >
-    </MPCard>
-  </div>
+
+<div>
+  <MPCard type="bankCard" style="width: 350px; height: 200px" >
+    <template #header>> Header</template>
+    <template #avatar>> Logo</template>
+    <template #content>> Content</template>
+    <template #date>> Date</template>
+    <template #others>> Others</template>
+  </MPCard>
 </div>
 
 ```vue
-<div style="flex-wrap: nowrap;
-      overflow-x: auto;
-      padding: 20px;">
-  <div style="width:1100px;
-      display: flex;">
-    <MPCard
-      :radius="`20px`"
-      type="bankCard"
-      style="width:350px;height:200px" 
-      :bgBlur="false"
-    >
-      <template #header>
-        <div
-          style="display:flex;justify-content: space-between;flex:1; align-items: center;"
-        >
-          <span style="font-size:12px;">WORD ELITE</span>
-          <span>
-            <img
-              src="/images/mastercard/wave.png"
-              :width="15" 
-            />
-          </span>
-        </div>
-      </template>
-      <template #avatar>
-        <img
-          src="/images/mastercard/mastercard.png"
-          :width="35"
-          :height="35"
-          style="margin:0px 5px 0px 0px;"
-          alt=""
-        />
-      </template>
-      <template #content>5412 7512 3412 3456</template>
-      <template #date
-        ><small style="font-size:0.5rem">VALID THAU</small> 12/23</template
-      >
-      <template #others
-        ><small style="font-size:12px">LEE M. CARDHOLDER</small></template
-      >
-    </MPCard> 
-    <MPCard
-      :radius="`20px`"
-      type="bankCard"
-      style="width:350px;height:200px"
-      backgroundImage='/images/img.jpg'
-    >
-      <template #header>
-        <div
-          style="display:flex;justify-content: space-between;flex:1; align-items: center;"
-        >
-          <span style="font-size:12px">WORD ELITE</span>
-          <span>
-            <img
-              src="/images/mastercard/wave.png"
-              :width="15" 
-            />
-          </span>
-        </div>
-      </template>
-      <template #avatar> 
-        <img
-          src="/images/mastercard/mastercard.png"
-          :width="35"
-          :height="35"
-          style="margin:0px 5px 0px 0px;"
-          alt=""
-        />
-      </template>
-      <template #content>5412 7512 3412 3456</template>
-      <template #date
-        ><small style="font-size:0.5rem">VALID THAU</small> 12/23</template
-      >
-      <template #others
-        ><small style="font-size:12px">LEE M. CARDHOLDER</small></template
-      >
-    </MPCard>
-    <MPCard
-      :radius="`20px`"
-      type="bankCard"
-      style="width:350px;height:200px" 
-      :bgBlur="false"
-    >
-      <template #header>
-        <div
-          style="display:flex;justify-content: space-between;flex:1; align-items: center;"
-        >
-          <span style="font-size:12px">WORD ELITE</span>
-          <span>
-            <img
-              src="/images/mastercard/wave.png"
-              :width="15" 
-            />
-          </span>
-        </div>
-      </template>
-      <template #avatar> 
-        <img
-          src="/images/mastercard/mastercard.png"
-          :width="35"
-          :height="35"
-          style="margin:0px 5px 0px 0px;"
-          alt=""
-        />
-      </template>
-      <template #content>5412 7512 3412 3456</template>
-      <template #date
-        ><small style="font-size:0.5rem">VALID THAU</small> 12/23</template
-      >
-      <template #others
-        ><small style="font-size:12px">LEE M. CARDHOLDER</small></template
-      >
-    </MPCard>
-  </div>
+<div>
+  <MPCard type="bankCard" style="width: 350px; height: 200px" >
+    <template #header>> Header</template>
+    <template #avatar>> Logo</template>
+    <template #content>> Content</template>
+    <template #date>> Date</template>
+    <template #others>> Others</template>
+  </MPCard>
+</div>
+```
+
+<div>
+  <MPCard :radius="`20px`"
+          type="bankCard"
+          style="width: 350px; height: 200px"
+          :bgBlur="false">
+    <template #header>
+      <div style="
+          display: flex;
+          justify-content: space-between;
+          flex: 1;
+          align-items: center;
+        ">
+        <span style="font-size: 12px">WORD ELITE</span>
+        <span>
+          <img src="/images/mastercard/wave.png"
+                :width="15" />
+        </span>
+      </div>
+    </template>
+    <template #avatar>
+      <img src="/images/mastercard/mastercard.png"
+            :width="35"
+            :height="35"
+            style="margin: 0px 5px 0px 0px"
+            alt="" />
+    </template>
+    <template #content>5412 7512 3412 3456</template>
+    <template #date><small style="font-size: 0.5rem">VALID THAU</small> 12/23</template>
+    <template #others><small style="font-size: 12px">LEE M. CARDHOLDER</small></template>
+  </MPCard>
+</div>
+
+```vue
+<div>
+  <MPCard :radius="`20px`"
+          type="bankCard"
+          style="width: 350px; height: 200px"
+          :bgBlur="false">
+    <template #header>
+      <div style="
+          display: flex;
+          justify-content: space-between;
+          flex: 1;
+          align-items: center;
+        ">
+        <span style="font-size: 12px">WORD ELITE</span>
+        <span>
+          <img src="/images/mastercard/wave.png"
+                :width="15" />
+        </span>
+      </div>
+    </template>
+    <template #avatar>
+      <img src="/images/mastercard/mastercard.png"
+            :width="35"
+            :height="35"
+            style="margin: 0px 5px 0px 0px"
+            alt="" />
+    </template>
+    <template #content>5412 7512 3412 3456</template>
+    <template #date><small style="font-size: 0.5rem">VALID THAU</small> 12/23</template>
+    <template #others><small style="font-size: 12px">LEE M. CARDHOLDER</small></template>
+  </MPCard>
+</div>
+```
+
+<div>
+  <MPCard :radius="`20px`"
+          type="bankCard"
+          style="width: 350px; height: 200px; color: #fff;"
+          backgroundImage="/images/img.jpg"
+          :bgBlur="false">
+    <template #header>
+      <div style="
+          display: flex;
+          justify-content: space-between;
+          flex: 1;
+          align-items: center;
+        ">
+        <span style="font-size: 12px">WORD ELITE</span>
+        <span>
+          <img src="/images/mastercard/wave.png"
+                :width="15" />
+        </span>
+      </div>
+    </template>
+    <template #avatar>
+      <img src="/images/mastercard/mastercard.png"
+            :width="35"
+            :height="35"
+            style="margin: 0px 5px 0px 0px"
+            alt="" />
+    </template>
+    <template #content>5412 7512 3412 3456</template>
+    <template #date><small style="font-size: 0.5rem">VALID THAU</small> 12/23</template>
+    <template #others><small style="font-size: 12px">LEE M. CARDHOLDER</small></template>
+  </MPCard>
+</div>
+
+```vue
+<div>
+  <MPCard :radius="`20px`"
+          type="bankCard"
+          style="width: 350px; height: 200px; color: #fff;"
+          backgroundImage="/images/img.jpg"
+          :bgBlur="false">
+    <template #header>
+      <div style="
+          display: flex;
+          justify-content: space-between;
+          flex: 1;
+          align-items: center;
+        ">
+        <span style="font-size: 12px">WORD ELITE</span>
+        <span>
+          <img src="/images/mastercard/wave.png"
+                :width="15" />
+        </span>
+      </div>
+    </template>
+    <template #avatar>
+      <img src="/images/mastercard/mastercard.png"
+            :width="35"
+            :height="35"
+            style="margin: 0px 5px 0px 0px"
+            alt="" />
+    </template>
+    <template #content>5412 7512 3412 3456</template>
+    <template #date><small style="font-size: 0.5rem">VALID THAU</small> 12/23</template>
+    <template #others><small style="font-size: 12px">LEE M. CARDHOLDER</small></template>
+  </MPCard>
+</div>
+```
+
+<div>
+  <MPCard :radius="`20px`"
+          type="bankCard"
+          style="width: 350px; height: 200px">
+    <template #header>
+      <div style="
+          display: flex;
+          justify-content: space-between;
+          flex: 1;
+          align-items: center;
+        ">
+        <span style="font-size: 12px">WORD ELITE</span>
+        <span>
+          <img src="/images/mastercard/wave.png"
+                :width="15" />
+        </span>
+      </div>
+    </template>
+    <template #avatar>
+      <img src="/images/mastercard/mastercard.png"
+            :width="35"
+            :height="35"
+            style="margin: 0px 5px 0px 0px"
+            alt="" />
+    </template>
+    <template #content>5412 7512 3412 3456</template>
+    <template #date><small style="font-size: 0.5rem">VALID THAU</small> 12/23</template>
+    <template #others><small style="font-size: 12px">LEE M. CARDHOLDER</small></template>
+  </MPCard>
+</div>
+
+```vue
+<div>
+  <MPCard :radius="`20px`"
+          type="bankCard"
+          style="width: 350px; height: 200px">
+    <template #header>
+      <div style="
+          display: flex;
+          justify-content: space-between;
+          flex: 1;
+          align-items: center;
+        ">
+        <span style="font-size: 12px">WORD ELITE</span>
+        <span>
+          <img src="/images/mastercard/wave.png"
+                :width="15" />
+        </span>
+      </div>
+    </template>
+    <template #avatar>
+      <img src="/images/mastercard/mastercard.png"
+            :width="35"
+            :height="35"
+            style="margin: 0px 5px 0px 0px"
+            alt="" />
+    </template>
+    <template #content>5412 7512 3412 3456</template>
+    <template #date><small style="font-size: 0.5rem">VALID THAU</small> 12/23</template>
+    <template #others><small style="font-size: 12px">LEE M. CARDHOLDER</small></template>
+  </MPCard>
 </div>
 ```
 
@@ -309,24 +309,9 @@
 ### Props
 |Props Name|Explanation|Type|Default| 
 |:---------|:----------|:---|:------|
-|value|The source data of carousel|`Array`|`[]`|
-|height|The height of carousel|`String`|`300px`|
-|indicators|If show the indicators at the bottom of slides|`Boolean`|`false`|
-### Data Props
-|Data Props Name|Explanation|Type|Default|Required|
-|:--------------|:----------|:---|:------|:-------|
-|pic|The `URL` of image|`String`|`''`|`Required`|
-|width|Display width of image, if left it unset, the pic will show as original size. if set only width without height, the height will automatically fit the scale|`Number`| |`Optional`|
-|height|Display height of image, if set width and left height unset, the pic will show as original size.|`Number`| |`Optional`|
-|order|The slides will shows in ascending order|`Number`| |`Optional`|
-
-### Events
-<!-- |Event Name|Explanation|Type|Default| -->
-
-|Event Name|Explanation|Return Value|
-|:----------|:-----------|:------------|
-|click|Click event, triggered when you click the actived slice.| `$event` ,`item`,`index`, for `Click Event`,`Clicked Object`,`Index of the Clicked Object` |
-|pause|Emit while carousel paused, specific means when mouse over the slide|`index`, current index of the paused slide|
-|continue|Emit when carousel resume, specific means when mouse out of the slide|`index`, current index of the resuming slide|
-|next|Emit when carousel turn to next page|`index`, the index of the turning slide|
-|previous|Emit when carousel turn to previous page|`index`, the index of the turning slide|
+|radius| 卡片圆角弧度 |`String`|`'10px'`|
+|type| 适用预设,目前有以下主题[`'bankCard'`,`'userInfo'`],留空则为默认纯白卡片 |`String`| `null` | 
+|avatar| 当`type`为[`'userInfo'`]时设置有效,传入图片url或base64,作为头像显示 |`String`| `null` | 
+|avatarPosition| 当`type`为[`'userInfo'`]时设置有效,设置头像位置,可设为[`left`,`right`] |`String`|`'left'`| 
+|backgroundImage| 当`type`为[`'bankCard'`]时设置有效,传入图片url或base64,作为背景图片显示,背景图片显示模式为Cover,当`type`为`bankCard`且当前值不设置时,默认生成彩球图片 |`String`| `null`| 
+|bgBlur| 当`type`为[`'bankCard'`]时设置有效, 是否开启背景模糊模式 |`Boolean`|`true`|  

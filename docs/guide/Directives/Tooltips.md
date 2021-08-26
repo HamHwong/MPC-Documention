@@ -1,4 +1,4 @@
-# Tooltips
+# Tooltips(Fixing)
 ## Overview
  根据挂载DOM的长宽和Content内容长宽自动选择显示方向的Tooltips.
 ## Example
