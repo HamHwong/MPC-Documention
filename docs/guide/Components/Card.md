@@ -305,6 +305,44 @@
 </div>
 ```
 
+<MPCard
+  :radius="`10px`"
+  type="gallery"
+  style="width:300px;margin:5px" 
+  :image="`/images/img.jpg`"
+>
+  <div style="padding:10px;position:relative">
+    <div>
+      <i>
+        <font-awesome-icon :icon="['far', 'heart']" />
+      </i>
+    </div>
+    <div>
+      Name
+    </div>
+  </div>
+</MPCard>
+
+```vue
+<MPCard
+  :radius="`10px`"
+  type="gallery"
+  style="width:300px;margin:5px" 
+  :image="`/images/img.jpg`"
+>
+  <div style="padding:10px;position:relative">
+    <div>
+      <i>
+        <font-awesome-icon :icon="['far', 'heart']" />
+      </i>
+    </div>
+    <div>
+      Name
+    </div>
+  </div>
+</MPCard>
+```
+
 ## API
 ### Props
 |Props Name|Explanation|Type|Default| 
@@ -315,3 +353,4 @@
 |avatarPosition| 当`type`为[`'userInfo'`]时设置有效,设置头像位置,可设为[`left`,`right`] |`String`|`'left'`| 
 |backgroundImage| 当`type`为[`'bankCard'`]时设置有效,传入图片url或base64,作为背景图片显示,背景图片显示模式为Cover,当`type`为`bankCard`且当前值不设置时,默认生成彩球图片 |`String`| `null`| 
 |bgBlur| 当`type`为[`'bankCard'`]时设置有效, 是否开启背景模糊模式 |`Boolean`|`true`|  
+|image| 当`type`为[`'gallery'`]时设置有效, 设置头图 |`string`|`null`|  

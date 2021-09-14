@@ -1,7 +1,7 @@
 # Mpanda Studio Components(MPC)
 是个人从之前开发的项目中抽出的组件库, 并基于Vue3进行重构, 
 
-若需要使用原生ES6版本, 请参考本项目Git Repository的Main分支, 本项目更新以Vue3版为主, 
+若需要使用原生ES6版本, 请参考本项目Git Repository的[Master](https://github.com/HamHwong/MPC/tree/master)分支, 本项目更新以Vue3版为主, 
 
 由于不同项目不全基于Vue等MVVM框架开发, 故新特性可能会先发布原生ES6版本, 后再以Vue3语法重构并加以完善.
 

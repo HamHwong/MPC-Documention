@@ -51,6 +51,10 @@ module.exports = {
               text: 'PDFReader PDF阅读器',
               link: '/guide/Components/PDFReader',
             },
+            {
+              text: 'Waterfall 瀑布流',
+              link: '/guide/Components/Waterfall',
+            },
           ],
         },
         {
