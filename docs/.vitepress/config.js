@@ -36,33 +36,33 @@ module.exports = {
         {
           text: 'Introduction 介绍',
           children: [
-            { text: "What's MPC 什么是MPC？", link: '/' },
-            { text: 'Start 从起步到芜湖', link: '/guide/start' },
+            { text: "What's MPC 什么是MPC？", link: '/index.html' },
+            { text: 'Start 从起步到芜湖', link: '/guide/start.html' },
             // { text: "Configuration 文件配置", link: "/guide/configuration" },
           ],
         },
         {
           text: 'Components 组件',
           children: [
-            { text: 'Card 卡片', link: '/guide/Components/Card' },
-            { text: 'Carousel 轮播图', link: '/guide/Components/Carousel' },
-            { text: 'Modal 弹窗', link: '/guide/Components/Modal' },
+            { text: 'Card 卡片', link: '/guide/Components/Card.html' },
+            { text: 'Carousel 轮播图', link: '/guide/Components/Carousel.html' },
+            { text: 'Modal 弹窗', link: '/guide/Components/Modal.html' },
             {
               text: 'PDFReader PDF阅读器',
-              link: '/guide/Components/PDFReader',
+              link: '/guide/Components/PDFReader.html',
             },
             {
               text: 'Waterfall 瀑布流',
-              link: '/guide/Components/Waterfall',
+              link: '/guide/Components/Waterfall.html',
             },
           ],
         },
         {
           text: 'Directives 命令',
           children: [
-            { text: 'Suspend 悬浮', link: '/guide/Directives/Suspend' },
-            { text: 'Tooltips 提示框', link: '/guide/Directives/Tooltips' },
-            { text: 'Blur 模糊', link: '/guide/Directives/Blur' },
+            { text: 'Suspend 悬浮', link: '/guide/Directives/Suspend.html' },
+            { text: 'Tooltips 提示框', link: '/guide/Directives/Tooltips.html' },
+            { text: 'Blur 模糊', link: '/guide/Directives/Blur.html' },
           ],
         },
         {
@@ -70,7 +70,7 @@ module.exports = {
           children: [
             {
               text: 'isElementInViewport ',
-              link: '/guide/Utils/isElementInViewport',
+              link: '/guide/Utils/isElementInViewport.html',
             },
           ],
         },

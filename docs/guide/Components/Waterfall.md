@@ -58,7 +58,8 @@
 ### Props
 |Props Name|Explanation|Type|Default| 
 |:---------|:----------|:---|:------|
-|column|是否可移动|`Boolean`| `false` |
+|column|列数|`Number`| `3` |
+|height|高度|`String`| `100%` |
 |type|瀑布流对齐方式,包括[`'around'`,`'between'`,`'unset'`,`'center'`,`'evenly'`]|`string`|`0`|
 
 
