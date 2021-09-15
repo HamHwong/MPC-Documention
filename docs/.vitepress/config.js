@@ -81,18 +81,19 @@ module.exports = {
       { text: '介绍', link: '/', activeMatch: '^/$|^/guide/' },
       {
         text: '更多',
-        link: '/contact/',
+        link: '/contact/index.html',
       },
     ],
   },
-  vue: { 
-    ssr: false,
+  vue: {  
     template: {
+      ssr:true,
       compilerOptions: {
         directiveTransforms: {
           tooltips: ssrTransformCustomDir,
           suspend: ssrTransformCustomDir,
           blur: ssrTransformCustomDir,
+          bridge:ssrTransformCustomDir
         },
       },
     },
