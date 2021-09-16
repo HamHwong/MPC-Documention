@@ -25,14 +25,16 @@ export default{
     }
 }
 </script>
-<Button @click="handleShow">点击开窗</Button>
-<MPModal :visible='modalVisibility'  
-        @close="handleClose" 
-        :position="{x:50,y:100}"  
-        draggable 
-        resizeable> 
-    <MPPdfReader :pdfurl="url"/> 
-</MPModal>
+<div>
+    <button @click="handleShow">点击开窗</button>
+    <MPModal :visible='modalVisibility'  
+            @close="handleClose" 
+            :position="{x:50,y:100}"  
+            draggable 
+            resizeable> 
+        <MPPdfReader :pdfurl="url"/> 
+    </MPModal>
+</div>
 
 ## API
 
