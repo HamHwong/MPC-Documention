@@ -81,7 +81,7 @@ module.exports = {
   },
   vue: {  
     template: {
-      ssr:true,
+      ssr:false,
       compilerOptions: {
         directiveTransforms: {
           'tooltips': ssrTransformCustomDir,
