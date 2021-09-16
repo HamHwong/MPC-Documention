@@ -3,14 +3,19 @@
  根据挂载DOM的长宽和Content内容长宽自动选择显示方向的Tooltips.
 ## Example
 
-  <div>
+<div>
+  <ClientOnly>
     <span v-tooltips>鼠标</span>
-  </div> 
-  <div 
-  style="display:flex;
-        justify-content:flex-end;">
+  </ClientOnly>
+</div> 
+<div 
+style="display:flex;
+      justify-content:flex-end;">
+  <ClientOnly>
     <span v-tooltips="`自定义内容`">鼠标</span>
-  </div>  
+  </ClientOnly>
+</div>
+<ClientOnly>  
   <div v-tooltips="`自定义内容`" 
   style="display:flex;
         justify-content: flex-end;width:100px;
@@ -20,6 +25,7 @@
         margin:10px">
   鼠标
   </div> 
+</ClientOnly>
 
 ```vue
 <template>

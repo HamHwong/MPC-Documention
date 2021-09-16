@@ -1,11 +1,10 @@
-const vue = require('@vitejs/plugin-vue') 
-// import { Options as VuePluginOptions } from '@vitejs/plugin-vue'
-// const ssrTransformCustomDir = () => {
-//   return {
-//     props: [],
-//     needRuntime: false,
-//   }
-// }
+const vue = require('@vitejs/plugin-vue')  
+const ssrTransformCustomDir = () => {
+  return {
+    props: [],
+    needRuntime: true
+  }
+}
 module.exports = {
   title: 'MpandaStudio Components Library', // 顶部左侧标题
   base: '/', // 项目的根路径
@@ -88,14 +87,14 @@ module.exports = {
   vue: {  
     template: {
       ssr:true,
-      // compilerOptions: {
-      //   directiveTransforms: {
-      //     tooltips: ()=>({props:[]}),
-      //     suspend:  ()=>({props:[]}),
-      //     blur:  ()=>({props:[]}),
-      //     bridge: ()=>({props:[]}),
-      //   },
-      // },
+      compilerOptions: {
+        directiveTransforms: {
+          'tooltips': ssrTransformCustomDir,
+          'suspend':  ssrTransformCustomDir,
+          'blur':  ssrTransformCustomDir,
+          'bridge': ssrTransformCustomDir,
+        },
+      },
     },
   },
 }

@@ -20,7 +20,7 @@
   "homepage": "https://github.com/HamHwong/MPC-Documention#readme",
   "devDependencies": {
     "sass": "^1.37.5",
-    "vitepress": "^0.16.1"
+    "vitepress": "^0.18.0"
   },
   "dependencies": {
     "@mpanda/mpc": "^0.1.6-5.17"

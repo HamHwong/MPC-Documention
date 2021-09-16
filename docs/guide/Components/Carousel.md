@@ -48,7 +48,9 @@ import { onMounted, ref, nextTick, reactive, watch } from 'vue'
 <div style="width:100%;
             background-color:#ccc;
             box-sizing:content-box;">
-  <MPCarousel v-if="isShow" indicators @click="handleClick" :value="data" /> 
+  <ClientOnly>
+    <MPCarousel v-if="isShow" indicators @click="handleClick" :value="data" /> 
+  </ClientOnly>
 </div>
 
 ```vue
