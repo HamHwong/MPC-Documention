@@ -23,6 +23,6 @@
     "vitepress": "^0.22.3"
   },
   "dependencies": {
-    "@mpanda/mpc": "^0.1.6-5.17"
+    "@mpanda/mpc": "latest"
   }
 }
