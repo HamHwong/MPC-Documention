@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as a,N as r}from"./chunks/framework.6acf563d.js";const _=JSON.parse('{"title":"Mpanda Studio Components(MPC)","description":"","frontmatter":{},"headers":[],"relativePath":"index.md"}'),o={name:"index.md"},n=r("",10),d=[n];function s(i,p,l,c,u,h){return e(),a("div",null,d)}const f=t(o,[["render",s]]);export{_ as __pageData,f as default};

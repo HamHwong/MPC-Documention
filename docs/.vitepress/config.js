@@ -1,8 +1,9 @@
 const vue = require('@vitejs/plugin-vue')  
 const ssrTransformCustomDir = () => ({ props: [], needRuntime: true })
+console.log('process.env.homemade', process.env.homemade)
 module.exports = {
   title: 'MpandaStudio Components Library', // 顶部左侧标题
-  base: '/', // 项目的根路径
+  base: process.env.homemade?'/mpc': '/', // 项目的根路径
   lang: 'zh-CN',
   head: [
     // 设置 描述 和 关键词

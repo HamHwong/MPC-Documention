@@ -4,9 +4,10 @@
   "description": "the documention of MPC, and based on vitepress.",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "dev": "vitepress dev docs",
+    "build": "cross-env  vitepress build docs",
+    "homemade": "cross-env homemade=true vitepress build docs",
+    "serve": "vitepress serve docs"
   },
   "repository": {
     "type": "git",
@@ -19,8 +20,9 @@
   },
   "homepage": "https://github.com/HamHwong/MPC-Documention#readme",
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "sass": "^1.42.1",
-    "vitepress": "^0.22.3"
+    "vitepress": "^1.0.0-alpha.64"
   },
   "dependencies": {
     "@mpanda/mpc": "latest"
